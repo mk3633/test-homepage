@@ -375,9 +375,11 @@ body {
 }
 
 .card-content {
-  font-size: 18px;
+  font-size: clamp(14px, 4vw, 18px);
   font-weight: 500;
   color: var(--text-muted);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .card-content strong {
@@ -387,14 +389,18 @@ body {
 
 .card-content p {
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
 }
 .card-content p::before {
   content: '•';
   color: var(--primary);
-  font-size: 20px;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.25;
 }
 .card-content p:last-child {
   margin-bottom: 0;
