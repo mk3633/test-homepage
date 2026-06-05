@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container" id="top">
+        <!-- Header -->
+        <header class="header">
+            <button onclick="window.location.href='#'">
+                <span class="material-symbols-outlined">home</span>
+                Home
+            </button>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                Top
+                <span class="material-symbols-outlined">arrow_upward</span>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="avatar-container floating">
+                <img src="assets/profile_avatar.jpg" alt="Profile Image" class="avatar">
+            </div>
+            
+            <h1 class="name">임승현 <span class="nickname">(앤서니500)</span></h1>
+            
+            <div class="basic-info">
+                <span class="info-chip">
+                    <span class="material-symbols-outlined">call</span>
+                    010-4511-0631
+                </span>
+                <span class="info-chip">
+                    <span class="material-symbols-outlined">mail</span>
+                    ceo@qni.co.kr
+                </span>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="quick-actions">
+                <a href="tel:010-4511-0631" class="action-btn">
+                    <div class="action-btn-icon">
+                        <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <span class="action-label">전화</span>
+                </a>
+                <a href="mailto:ceo@qni.co.kr" class="action-btn">
+                    <div class="action-btn-icon">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <span class="action-label">메일</span>
+                </a>
+                <a href="#" class="action-btn" onclick="if(navigator.share){navigator.share({title:document.title, url:window.location.href})}else{alert('공유 기능을 지원하지 않는 브라우저입니다.')}; return false;">
+                    <div class="action-btn-icon">
+                        <span class="material-symbols-outlined">share</span>
+                    </div>
+                    <span class="action-label">공유</span>
+                </a>
+                <a href="#" class="action-btn kakao" onclick="alert('카카오톡 링크를 입력해주세요.'); return false;">
+                    <div class="action-btn-icon">
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                    </div>
+                    <span class="action-label">카톡</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Information Main Section (Bento Grid) -->
+        <main class="section">
+            
+            <!-- Company & Career -->
+            <div class="card bento-span-2">
+                <div class="card-title">
+                    <span class="material-symbols-outlined">business_center</span>
+                    소속 및 경력
+                </div>
+                <div class="card-content">
+                    <p><strong>(주)큐앤아이, (주)플랫폼매니지먼트</strong> 대표</p>
+                    <p><strong>삼육보건대 산학협력단</strong> 창업연구소 소장</p>
+                </div>
+            </div>
+
+            <!-- Self Intro -->
+            <a href="about.html" class="card bento-span-1 bento-link-card">
+                <div class="bento-icon">
+                    <span class="material-symbols-outlined">waving_hand</span>
+                </div>
+                <div class="bento-text">자기소개<br>보기</div>
+                <div class="bento-arrow"><span class="material-symbols-outlined">chevron_right</span></div>
+            </a>
+
+            <!-- Main Link 1 (FlickOn) -->
+            <a href="https://plick-on.com/" target="_blank" class="card bento-span-1 bento-link-card">
+                <div class="bento-icon">
+                    <span class="material-symbols-outlined">language</span>
+                </div>
+                <div class="bento-text">플릭온<br>(FlickOn)</div>
+                <div class="bento-arrow"><span class="material-symbols-outlined">chevron_right</span></div>
+            </a>
+            
+            <!-- Main Link 2 (Q&I Gift) -->
+            <a href="https://www.qnigift.com/" target="_blank" class="card bento-span-2 bento-link-horizontal">
+                <div class="bento-icon">
+                    <span class="material-symbols-outlined">card_giftcard</span>
+                </div>
+                <div class="bento-text-horiz">큐앤아이기프트</div>
+                <div class="bento-arrow"><span class="material-symbols-outlined">chevron_right</span></div>
+            </a>
+
+            <!-- SNS Links -->
+            <div class="card bento-span-2">
+                <div class="card-title">
+                    <span class="material-symbols-outlined">share</span>
+                    SNS 채널
+                </div>
+                <div class="social-grid">
+                    <a href="https://www.youtube.com/@TV-me9dq" target="_blank" class="social-btn">
+                        <span class="material-symbols-outlined" style="color: #FF0000;">play_circle</span>
+                        유튜브
+                    </a>
+                    <a href="https://blog.naver.com/anthony500" target="_blank" class="social-btn">
+                        <span class="material-symbols-outlined" style="color: #03C75A;">article</span>
+                        블로그
+                    </a>
+                    <a href="https://www.facebook.com/anthony500im" target="_blank" class="social-btn">
+                        <span class="material-symbols-outlined" style="color: #1877F2;">thumb_up</span>
+                        페이스북
+                    </a>
+                    <a href="https://www.instagram.com/limseunghyun500" taget="_blank" class="social-btn">
+                        <span class="material-symbols-outlined" style="color: #E1306C;">photo_camera</span>
+                        인스타그램
+                    </a>
+                </div>
+            </div>
+
+            <!-- Book Section -->
+            <div class="card bento-span-2" style="padding: 16px;">
+                <div class="card-title">
+                    <span class="material-symbols-outlined">auto_stories</span>
+                    출간 도서
+                </div>
+                <a href="https://product.kyobobook.co.kr/detail/S000202622496" target="_blank" class="book-card">
+                    <img src="assets/profile_book.png" alt="임부의 창업노트" class="book-image">
+                    <div class="book-info">
+                        <h3 class="book-title">임부의 창업노트</h3>
+                        <p class="book-desc">살아남는 비법을 알려주는 임사부 창업 노트</p>
+                        <span class="btn-small">자세히 보기</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PR Image Section -->
+            <div class="card bento-span-2" style="padding: 16px;">
+                <div class="card-title">
+                    <span class="material-symbols-outlined">campaign</span>
+                    PR 포트폴리오
+                </div>
+                <div class="pr-container">
+                    <div class="pr-image-wrapper" id="prWrapper">
+                        <img src="assets/632-detail_sub_01.jpg" alt="PR Image" class="pr-img">
+                        <div class="pr-fade" id="prFade"></div>
+                    </div>
+                    <button class="expand-btn" id="expandBtn" onclick="togglePR()">
+                        전체보기
+                        <span class="material-symbols-outlined" id="expandIcon">expand_more</span>
+                    </button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h4 class="footer-title">활동중인 비즈니스 모임 & 클럽</h4>
+            <div class="footer-tags">
+                <a href="https://weajou.co.kr/" target="_blank" class="footer-tag">위아주</a>
+                <a href="https://plick-on.com/" target="_blank" class="footer-tag">플릭온</a>
+                <a href="#" onclick="alert('매화리드골프 모임 링크를 입력해주세요.'); return false;" class="footer-tag">매화리드골프 모임</a>
+                <a href="#" onclick="alert('위아주화성동문회 링크를 입력해주세요.'); return false;" class="footer-tag">위아주화성동문회</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Wireframe Design. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function togglePR() {
+            const wrapper = document.getElementById('prWrapper');
+            const btn = document.getElementById('expandBtn');
+            const icon = document.getElementById('expandIcon');
+            
+            if (wrapper.classList.contains('expanded')) {
+                wrapper.classList.remove('expanded');
+                btn.innerHTML = '전체보기 <span class="material-symbols-outlined" id="expandIcon">expand_more</span>';
+            } else {
+                wrapper.classList.add('expanded');
+                btn.innerHTML = '접기 <span class="material-symbols-outlined" id="expandIcon">expand_less</span>';
+            }
+        }
+    </script>
+</body>
+</html>
