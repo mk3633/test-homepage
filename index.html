@@ -217,15 +217,75 @@
                     <span class="material-symbols-outlined">group</span>
                     추천하고 싶은 인맥
                 </div>
-                <div class="footer-tags" style="justify-content: flex-start; margin-top: 8px;">
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=625" target="_blank" class="footer-tag">박승윤</a>
-                    <a href="https://www.sccpartners.co.kr/people/630" target="_blank" class="footer-tag">김도윤</a>
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=629" target="_blank" class="footer-tag">하병만</a>
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=627" target="_blank" class="footer-tag">최형주</a>
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=628" target="_blank" class="footer-tag">김새희</a>
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=635" target="_blank" class="footer-tag">이종석</a>
-                    <a href="https://www.weajou.co.kr/home/platform/view.php?id=863" target="_blank" class="footer-tag">박만식</a>
-                    <a href="#" target="_blank" class="footer-tag">곽동하</a>
+                <div class="people-carousel-wrapper">
+                    <div class="people-carousel-track">
+                        <!-- Original -->
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=625" target="_blank" class="person-card">
+                            <img src="assets/rec-625.png" alt="박승윤" class="person-image">
+                            <span class="person-name">박승윤</span>
+                        </a>
+                        <a href="https://www.sccpartners.co.kr/people/630" target="_blank" class="person-card">
+                            <img src="assets/rec-630.png" alt="김도윤" class="person-image">
+                            <span class="person-name">김도윤</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=629" target="_blank" class="person-card">
+                            <img src="assets/rec-629.png" alt="하병만" class="person-image">
+                            <span class="person-name">하병만</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=627" target="_blank" class="person-card">
+                            <img src="assets/rec-627.png" alt="최형주" class="person-image">
+                            <span class="person-name">최형주</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=628" target="_blank" class="person-card">
+                            <img src="assets/rec-628.png" alt="김새희" class="person-image">
+                            <span class="person-name">김새희</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=635" target="_blank" class="person-card">
+                            <img src="assets/rec-635.png" alt="이종석" class="person-image">
+                            <span class="person-name">이종석</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=863" target="_blank" class="person-card">
+                            <img src="assets/rec-863.png" alt="박만식" class="person-image">
+                            <span class="person-name">박만식</span>
+                        </a>
+                        <a href="#" target="_blank" class="person-card">
+                            <img src="assets/가상이미지.svg" alt="곽동하" class="person-image">
+                            <span class="person-name">곽동하</span>
+                        </a>
+                        <!-- Duplicated for infinite marquee -->
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=625" target="_blank" class="person-card">
+                            <img src="assets/rec-625.png" alt="박승윤" class="person-image">
+                            <span class="person-name">박승윤</span>
+                        </a>
+                        <a href="https://www.sccpartners.co.kr/people/630" target="_blank" class="person-card">
+                            <img src="assets/rec-630.png" alt="김도윤" class="person-image">
+                            <span class="person-name">김도윤</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=629" target="_blank" class="person-card">
+                            <img src="assets/rec-629.png" alt="하병만" class="person-image">
+                            <span class="person-name">하병만</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=627" target="_blank" class="person-card">
+                            <img src="assets/rec-627.png" alt="최형주" class="person-image">
+                            <span class="person-name">최형주</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=628" target="_blank" class="person-card">
+                            <img src="assets/rec-628.png" alt="김새희" class="person-image">
+                            <span class="person-name">김새희</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=635" target="_blank" class="person-card">
+                            <img src="assets/rec-635.png" alt="이종석" class="person-image">
+                            <span class="person-name">이종석</span>
+                        </a>
+                        <a href="https://www.weajou.co.kr/home/platform/view.php?id=863" target="_blank" class="person-card">
+                            <img src="assets/rec-863.png" alt="박만식" class="person-image">
+                            <span class="person-name">박만식</span>
+                        </a>
+                        <a href="#" target="_blank" class="person-card">
+                            <img src="assets/가상이미지.svg" alt="곽동하" class="person-image">
+                            <span class="person-name">곽동하</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -265,6 +325,85 @@
                 btn.innerHTML = '접기 <span class="material-symbols-outlined" id="introExpandIcon">expand_less</span>';
             }
         }
+
+        // Carousel Auto-scroll and Drag-to-scroll Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const wrapper = document.querySelector('.people-carousel-wrapper');
+            if (!wrapper) return;
+
+            let isPaused = false;
+            let scrollSpeed = 0.5; // Pixels per frame
+            let accumulator = 0;
+            
+            // Drag to scroll state
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let isDragging = false;
+
+            // Auto-scroll loop
+            function autoScroll() {
+                if (!isPaused && !isDown) {
+                    accumulator += scrollSpeed;
+                    if (accumulator >= 1) {
+                        wrapper.scrollLeft += Math.floor(accumulator);
+                        accumulator -= Math.floor(accumulator);
+                    }
+                    
+                    // Reset to 0 when we scroll past the first half to create an infinite loop
+                    if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) {
+                        wrapper.scrollLeft = 0;
+                    }
+                }
+                requestAnimationFrame(autoScroll);
+            }
+            autoScroll();
+
+            // Hover and touch pause
+            wrapper.addEventListener('mouseenter', () => { isPaused = true; });
+            wrapper.addEventListener('mouseleave', () => { isPaused = false; });
+            wrapper.addEventListener('touchstart', () => { isPaused = true; }, {passive: true});
+            wrapper.addEventListener('touchend', () => { isPaused = false; });
+
+            // Drag to scroll implementation
+            wrapper.addEventListener('mousedown', (e) => {
+                isDown = true;
+                isPaused = true;
+                isDragging = false;
+                startX = e.pageX - wrapper.offsetLeft;
+                scrollLeft = wrapper.scrollLeft;
+            });
+            
+            wrapper.addEventListener('mouseleave', () => {
+                isDown = false;
+                isPaused = false;
+            });
+            
+            wrapper.addEventListener('mouseup', () => {
+                isDown = false;
+                isPaused = false;
+                // prevent immediate click if it was a drag
+                setTimeout(() => { isDragging = false; }, 0);
+            });
+            
+            wrapper.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                isDragging = true;
+                const x = e.pageX - wrapper.offsetLeft;
+                const walk = (x - startX) * 1.5; // Scrolling speed multiplier
+                wrapper.scrollLeft = scrollLeft - walk;
+            });
+
+            // Prevent link clicking when dragging
+            wrapper.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (isDragging) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
